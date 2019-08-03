@@ -1,0 +1,1215 @@
+/* @media (max-width:1920px) { */
+  body { 
+    margin: 0 auto;
+    width: 96.87%;
+    max-width: 96.87%;/* Не трогать отвечает за автосмещение при сужении окна */
+    overscroll-behavior-y: contain;
+
+  }
+@media screen and (max-width: 1920px) {
+body { 
+  width: 96.87%;
+  max-width: 96.87%;/* Не трогать отвечает за автосмещение при сужении окна */
+}
+}
+@media screen and (max-width: 1440px) {
+  body { 
+    width: 94.44%;
+    max-width:94.44%;/* Не трогать отвечает за автосмещение при сужении окна */
+  }
+  }
+  @font-face {
+    font-family: 'Golos UI Regular';
+     src: url("golos-ui_regular.woff") format('woff');
+  }
+/* @font-face {
+  font-family: 'Golos UI Regular';
+  src: url(golos-ui_regular.woff);
+} */
+@font-face {
+  font-family: "Golos UI Bold";
+  src: url(golos-ui_bold.woff);
+}
+
+
+.catalog_cont {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+}
+.catalog_cont div {
+  /* background-color: red; */
+  aspect-ratio: 1;
+}
+.card_item_over_h {
+  display: grid;
+}
+.wrapper_cat {
+  padding-top: 1%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.wrapper_cat img {
+  width: 100%;
+  /* object-fit: contain; */
+}
+.photo_c {
+  position: relative;
+  left: 16px;
+  top: 16px;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+}
+.photo_c img {
+  max-width: 250px;
+}
+.card_itm_link_pict {
+    margin:  10% 10% 0% 10%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+/* #photoPicke {
+  position: absolute;
+  left: 16px;
+  top: 16px;
+  width: 288px;
+  height: 288px;
+  border-radius: 10px;
+  background: #eeeceb;
+  background-blend-mode: normal;
+} */
+nav {
+  z-index: 100;
+  height: 96px;
+  background: #37363B;
+  white-space: nowrap;
+  justify-content: space-between;
+  display: flex;
+  /* flex-flow: row nowrap; */
+  position: sticky;
+  top: 0px;
+  align-items: center;
+}
+nav ul {
+  display: flex;
+} 
+nav ul a :hover :link { text-decoration: none; }
+nav ul a {
+  
+  padding-right: 32px;
+  font-family: 'Golos UI';
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  color: #f3e0cf;
+  -webkit-tap-highlight-color: transparent;
+
+  /* overflow-wrap: break-word; */
+
+  
+}
+
+.left-menu {
+  margin-left: 2.5%;
+  
+}
+/* @media (max-width:1920px) { */
+  .menu-item {
+    display: flex;
+  margin-left: -1%;
+  }
+  /* } */
+  /* @media (max-width:1440px) {
+    .menu-item {
+      margin-left: 8px;
+
+      display: flex;
+  
+    }
+    } */
+
+nav ul img {
+  margin-right: 8px;
+  width: 32px;
+  height: 32px;
+  
+}
+nav ul, ol {
+  margin: 0;
+  /* padding-left: 9%; */
+  /* margin-top: 0; */
+  /* margin-bottom: 10px; */
+}
+.navbar-cont-r {
+  display: flex;
+  align-items: center
+}
+
+.r_menu_bar_item {
+  margin-right: 32px;
+  width: 32px;
+  height: 32px;
+  /* background: #F3E0CF; */
+  /* border-radius: 8px; */
+}
+.more_news {
+  height: 48px;
+}
+.more_news:focus {
+  outline: revert;
+}
+
+.more_news button {
+	color: inherit;
+	border: none;
+  font: inherit;
+	outline: inherit;
+  width: 7.57%;
+  font-family: 'Golos UI Regular';
+  /* font-size: 16px; */
+  text-wrap: nowrap;
+  /* font-weight: 487; */
+  line-height: 156.25%;
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (12 - 4) + 4px);
+  text-transform: uppercase;
+  margin-left: 49.25%;
+  margin-top: 1.3%;
+  border-radius: 10px;
+  border-color: #FFFF;
+  background: #f3e0cf;
+  background-blend-mode: normal;
+}
+#footerm {
+  display: flex;
+  height: 352px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+
+  background: #37363b;
+  background-blend-mode: normal;
+}
+.imgfl {
+  display: block;
+}
+#footerm img {
+  max-width: 100%;
+  height: auto;
+  }
+
+#footer_left {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.7%;
+  padding-top: 2.274%;
+
+}
+#footer_left ul { 
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0;
+  margin-inline-end: 0;
+  padding-inline-start: 0;
+}
+#footer_right {
+  display: flex;
+  padding: 0.9% 0 0 53.8%;
+}
+#footer_right ul{
+  padding-inline-start: calc( (100vw - 480px)/(1280 - 480) * (28.5 - 3) + 2px);
+}
+#footer_right li{
+  margin: calc( (100vw - 480px)/(1280 - 480) * (6 - 4) + 4px) 0 0 0;
+  text-wrap: nowrap;
+}
+
+
+#footerm li {
+  display:block;
+  /* margin:2.33% 0 0 10.719%; */
+  font-family: 'Golos UI Regular';
+  color:#f3e0cf;
+  line-height: calc( (100vw - 480px)/(1280 - 480) * (10.25 - 4) + 4px);
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (10.5 - 4) + 4px);
+  text-transform: uppercase;
+}
+a {text-decoration: none;}
+.inn {
+  /* display:block; */
+  padding-top:29.095%;
+  font-family: 'Golos UI Regular';
+  color:#f3e0cf;
+  /* line-height: calc( (100vw - 480px)/(1280 - 480) * (11 - 4) + 4px);
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (10.5 - 4) + 4px); */
+  text-transform: uppercase;
+}
+.navbar-cont-l {
+  margin-left: auto;
+}
+
+img.logo_full_ru {
+  width: 171px;
+  vertical-align: 0;
+  position: relative;
+    margin-left: 18.7%
+}
+.Navbar {
+  display: flex;
+  justify-content:space-between;
+  height: 96px;
+  background: #37363B;
+  max-width: 1728px;
+  position: fixed;
+  white-space: nowrap;
+}
+
+.Navbar__Link-icon{
+  width: 32px;
+  height: 32px;
+  left: 1760px;
+  top: 32px;
+  background: #F3E0CF;
+  border-radius: 8px;
+}
+
+
+.Navbar__Link_catalog{
+  /* padding-left: 308px;   */
+}
+.Navbar__Link {
+  padding-right: 32px;
+  font-family: 'Golos UI';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #F3E0CF;
+}
+
+.Navbar__Items {
+
+  margin-left: auto;
+
+}
+
+.Navbar__Items--right {
+
+  margin-left: auto;
+
+}
+
+.Navbar__Link-toggle {
+  display: none;
+}
+.flex_main {
+  display: flex;
+  justify-content: center;
+}
+.flex_mid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.Background_space {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: stretch;
+  align-items: center;
+
+  box-sizing: border-box;
+  border: 3px #37363B;
+  border-radius: 0px 0px 32px 32px; 
+  /* height: 576px; normal */
+  height:480px;
+  background:#37363b;
+  width: 100%;
+  top: 0px;
+} 
+/* TODO https://stackoverflow.com/questions/68562136/add-padding-to-the-input-caret */
+.search_bar::placeholder {
+  position: relative;
+    color: #37363b;
+    font-family: 'Golos UI Regular';
+    font-size: 11px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+  .search_bar{
+    padding-left: 1.5%;
+    display: flex;
+    box-sizing: border-box;
+    position: relative;
+    width: 648px;
+    /* width: 46%; */
+    height: 34px;
+    top: 154px;
+    border: 3px solid #37363B;
+    border-radius: 12px;
+}
+.promotions {
+  display: flex;
+  flex-wrap: nowrap;
+  /* max-width: 1728px; */
+  height: 288px;
+  /* margin: 32px 12px 0 0;
+  padding: 0 0 17px; */
+  /* background-color: #a1e6c3; */
+}
+.title-text {
+
+  display: flex;
+  max-width: 1728px;
+  height: 64px;
+}
+
+.title-text .icon {
+  padding-top: 32px;
+
+  display: flex;
+  width: 29.83px;
+  height: 29.83px;
+  background-blend-mode: normal;
+}
+.title-text a {
+  padding-top: 32px;
+  padding-left: 51.5%;
+  color: #37363b;
+  font-family: 'Golos UI Regular';
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 50%;
+}
+
+.title-left-text {
+
+  display: flex;
+  /* max-width: 1728px; */
+  height: 64px;
+}
+
+
+.title-left-text a {
+  padding-top: 32px;
+  padding-left: 8px;
+  color: #37363b;
+  font-family: 'Golos UI Regular';
+  font-size: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  margin-right: 50%;
+}
+
+.title-left-text .icon {
+  padding-top: 32px;
+
+  display: flex;
+  width: 29.83px;
+  height: 29.83px;
+  background-blend-mode: normal;
+}
+
+.promotions-text-block{
+  width: 1688px;
+  height: 32px;
+}
+
+
+.block_akc {
+  display: flex;
+  width: 300px;
+  height: 250px;
+  margin: 16px 11px 30px 0;
+  /* padding: 25px 176px 279px 32px; */
+  border-radius: 30px;
+  background-color: #f3e0cf;
+}
+.container_feedback {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  max-width: 1728px;
+  height: 368px;
+}
+
+.block_feedback{
+  display: flex;
+  margin-top: 16px;
+  margin-right: 15px;
+  width: 566px;
+  height: 336px;
+  border-radius: 30px;
+  background: #f3e0cf;
+  background-blend-mode: normal;
+}
+.block_feedback:last-child{
+  margin-right: 0px;
+}
+.container_block {
+  display: flex;
+  position: relative;
+  max-width: 1728px;
+  height: 96px;
+}
+.block_help {
+  display: flex;
+  flex-direction: column;
+  /* height: 64px; */
+  /* flex-wrap: wrap; */
+}
+.help_txt_icon {
+  display: flex;
+  /* align-items: baseline; */
+  align-items: baseline;
+
+  justify-content: space-between;
+}
+.help_txt_icon button:nth-of-type(1)
+{
+  margin-left: 70.6%;
+
+} 
+
+.help_txt_icon button{
+  font-family: 'Golos UI Regular';
+  border-color: transparent;
+  height: 2rem;
+  text-wrap: nowrap;
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (10 - 4) + 4px);
+  border-radius: 14px;
+  background: #f3e0cf;
+  background-blend-mode: normal;
+  margin-top: 18px;
+}
+.help_txt_icon .fa,.help_txt_icon .fa-brands, .fa-classic, .fa-regular, .fa-sharp, .fa-solid, .fab, .far, .fas {
+  padding-right: 4px;
+}
+.block_help a {
+    position: absolute;
+    left:0.6%;
+    padding-top: 2%;
+    text-wrap: nowrap;
+    /* width: 544px; */
+    height: 32px;
+    color: #37363b;
+    font-family: 'Golos UI Regular';
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    /* align-items: center; */
+
+  
+}
+
+.line_help {
+  display: flex;
+  margin-top: 16px;
+
+  /* margin-top: 1%; */
+  position: relative;
+  /* left: 1px; */
+  max-width: 99.9%;
+  height:1px;
+  border-radius: 3px;
+  /* border: 3px dashed #37363b; */
+  background-color: #37363b;
+}
+/* @media (max-width:1600px) {
+  .line_help {
+    max-width: 1599px;
+  }
+  }
+@media (max-width:1440px) {
+  .line_help {
+    max-width: 1439px;
+  }
+  } */
+
+.catalog-main {
+  position: relative;
+  display: flex;
+  /* top: 1072px; TODO chage to relative */
+  max-width: 1728px;
+  height: 912px;
+}
+
+.catalog-main big-block {
+  position:relative;
+  top: 16px;
+  display: flex;
+  width: 566px;
+  height: 592px;
+  border-radius: 30px;
+  background: #f3e0cf;
+  background-blend-mode: normal;
+}
+
+.catalog-main med-block {
+  margin-left: 12px;
+  position:relative;
+  top: 16px;
+  display: flex;
+  width: 566px;
+  height: 288px;
+  border-radius: 30px;
+  background: #f3e0cf;
+  background-blend-mode: normal;
+}
+
+.catalog-main small-block {
+  margin-left: 12px;
+  position:relative;
+  top: 16px;
+  display: flex;
+  width: 275px;
+  height: 288px;
+  border-radius: 30px;
+  background: #f3e0cf;
+  background-blend-mode: normal;
+}
+
+.menu_bar {
+  padding-right: 0.5%;
+  position: relative;
+  top: 200px;
+  display: flex;
+  justify-content: center;
+  height: 112px;
+  white-space: nowrap;
+  align-items: baseline;
+}
+.menu_bar_items {
+  display: flex;
+  /* border: 3px solid #37363B;
+  border-radius: 12px; */
+}
+
+.menu_bar_elem {
+  width: 99px;
+  height: 81px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  justify-content: normal;
+  align-items: flex-start;
+  padding-right: 1%;
+}
+.menu_bar_elem_ico {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  left: 30%;
+  /* bottom:48px; */
+  /* background: #f3e0cf; */
+  /* border-radius: 15px; */
+}
+.menu_bar_elem_txt {
+  padding-left: 4%;
+  position: relative;
+  top: 16px;
+  width: 99px;
+  height: 20px;
+  color: #f3e0cf;
+  font-family: 'Golos UI Regular';
+  font-size: 16px;
+  font-weight: 487;
+  line-height: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  /* display: flex; */
+  align-items: center;
+  /* text-transform: uppercase;
+  top: 16px;
+  position: relative;
+  width: 99px;
+  height: 20px;
+  font-family: 'Golos UI';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  color: #f3e0cf;
+  margin-left: auto; */
+}
+
+.stories, .scroll-stories, .storie  {
+  display: none;
+}
+.mobile-bottom-nav, .wrap_m_menu {
+  display: none;
+}
+.head-btn, .head-logo {
+  display: none;
+}
+.mgrid-akc  {
+  display: none;
+}
+
+.prom-block {
+  display: block;
+  min-height: 103px;
+  width: 100%;
+  padding: .4em 0;
+  overflow: hidden;
+  user-select: none;
+  cursor:grab;
+  /* position: absolute;
+  top: 208px; */
+
+}
+.prom-block .scroll-prom {
+  width: 100%;
+  /* overflow: auto; */
+  overflow: scroll;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scroll-prom::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Для WebKit (Chrome, Safari, Яндекс.Браузер) */
+  background-color: transparent; /* Для WebKit (фон полосы прокрутки) */
+}
+
+.prom-block .scroll-prom .prom {
+  margin:0 0em 0em 0.9%;
+  text-align: center;
+  /* overflow: scroll; */
+  /* width: 66px;
+
+  min-width: 66px; */
+}
+
+.prom-block {
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для Internet Explorer/Edge */
+  scrollbar-color: transparent transparent; /* Для Firefox (если вы хотите убрать полосу прокрутки, но сохранить прокручиваемую область) */
+
+}
+
+.prom-block .scroll-prom .prom .photo {
+  width: 330px;
+  height: auto;
+  border-radius: 50%;
+  /* border: 2px solid deeppink; */
+  display: inline-block;
+}
+.prom .photo img {
+  /* border-radius: 10%; */
+}
+/* .prom-block .scroll-prom .prom .name {
+  font-size: .7em;
+  color: #f3e0cf;
+  font-family: 'Golos UI Regular';
+  text-transform: uppercase;
+} */
+.prom-feed {
+  display: block;
+}
+
+.prom-feed .scroll-prom {
+ display: none;
+  width: 100%;
+  /* overflow: auto; */
+  overflow: scroll;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scroll-feed::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Для WebKit (Chrome, Safari, Яндекс.Браузер) */
+  background-color: transparent; /* Для WebKit (фон полосы прокрутки) */
+}
+
+.prom-feed .scroll-prom .prom {
+  margin:0 0em 0em 0.9%;
+  text-align: center;
+  /* overflow: scroll; */
+  /* width: 66px;
+
+  min-width: 66px; */
+}
+
+.prom-feed {
+  scrollbar-width: none; /* Для Firefox */
+  -ms-overflow-style: none; /* Для Internet Explorer/Edge */
+  scrollbar-color: transparent transparent; /* Для Firefox (если вы хотите убрать полосу прокрутки, но сохранить прокручиваемую область) */
+
+}
+
+.prom-feed .scroll-prom .prom .photo {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  /* border: 2px solid deeppink; */
+  display: inline-block;
+}
+.btns .btn-lg .btn-default .basket-btn-checkout {
+  outline: 0;
+    border-color: var(--c3);
+    background-color: var(--c3);
+    color: var(--c2);
+
+}
+@media only screen and (max-width: 2440px) {
+
+}
+
+@media screen and (max-width: 1130px) {
+ 
+  .detail_item_right_over {
+all: unset;
+  }
+  .detail_item_right {
+    flex-direction: column;
+  }
+  .stories, .scroll-stories, .storie  {
+    display: inline-block;
+  }
+  body { 
+    /* background-color: blue; */
+    margin: 0 auto;
+    max-width: 100%;/* Не трогать отвечает за автосмещение при сужении окна */
+    width:100%;
+  }
+  nav {
+    z-index: 100;
+    height: 48px;
+    background: #37363B;
+    white-space: nowrap;
+    justify-content: space-between;
+    display: flex;
+    /* flex-flow: row nowrap; */
+    position: sticky;
+    top: 0px;
+    align-items: center;
+  }
+ .navbar-cont-r, .left-menu {
+  display: none 
+ }
+ nav a {
+  /* padding-left: 42%; */
+ }
+ img.logo_full_ru {
+  display: none;
+  /* transform: translateX(-50%);
+  left: 50%;
+  position: absolute;
+  width: 98px; */
+}
+.menu_bar {
+  display: none;
+}
+.menu_bar_items {
+  display: none;
+}
+
+.head-logo {
+  display: block;
+  flex-grow: 1;
+  text-align: center;
+}
+.head-logo .logo {
+  width: 98px;
+  height: 56px;
+  display: inline-block;
+  background-size: 100% 100%;
+  /* background-size: 270px 235px; */
+  /* background-position: 0 -73px; */
+  background-image: url(/local/templates/.default/assets/img/logo_full_ru_mob.svg);
+}
+.head-btn {
+  display: block;
+}
+.head-btn .photo {
+  margin-left: 14px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(/local/templates/.default/assets/img/button_search_mob.svg);
+
+}
+.head-btn .people {
+  margin-right: 14px;
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-size: 100% 100%;
+  background-image: url(/local/templates/.default/assets/img/button_call_mob.svg);
+}
+
+.stories {
+  display: block;
+  min-height: 103px;
+  width: 100%;
+  padding: .4em 0;
+  overflow: hidden;
+  position: absolute;
+  top: 208px;
+
+}
+.stories .scroll-stories {
+  width: 100%;
+  overflow: auto;
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.scroll-stories::-webkit-scrollbar {
+  display: none;
+}
+
+.stories .scroll-stories .storie {
+  margin:0 0em 0em 0.9em;
+  text-align: center;
+  width: 66px;
+
+  min-width: 66px;
+}
+.stories .scroll-stories .storie .photo {
+  width: 35px;
+  height: auto;
+  border-radius: 50%;
+  /* border: 2px solid deeppink; */
+  display: inline-block;
+}
+.stories .scroll-stories .storie .name {
+  font-size: .7em;
+  color: #f3e0cf;
+  font-family: 'Golos UI Regular';
+  text-transform: uppercase;
+}
+
+
+.Background_space {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+      border-radius: 0 0 20px 20px;
+      height: 304px;
+}
+.search_bar{
+  width: 95%;
+  max-width:550px;
+  top: 16px;
+}
+.menu_bar_elem_ico {
+  height: 35px;
+  width: 35px;
+}
+.wrap_m_menu {
+  display: block;
+  position: fixed;
+  justify-items: end;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  will-change: transform;
+  transform: translateZ(0);
+  height: 7%;
+  background-color: #fff;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+}
+.mob_m_list {
+  list-style: none;
+  list-style-type: none;
+  text-decoration: none;
+  justify-content: center;
+  -moz-column-gap:8%;
+  column-gap: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-block-start: 0em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  padding-inline-end: 14px;
+  padding-inline-start: 14px;
+}
+.mob_m_list a:visited{
+ color: black;
+}
+.m_menu_elem {
+  margin-top: 2px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  /* width: 64px;
+  height: 48px; */
+}
+.m_menu_elem img{
+  width:calc( (100vw - 320px) / (414 - 320) * (28 - 25) + 25px);
+  max-width: 28px;
+  height: auto;
+}
+
+
+.menu-name {
+  display: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+  visibility: hidden;
+  text-transform: capitalize;
+  /* font-size: 9px; */
+  /* font-size: calc(9px + (100vw - 320px) * (15px / 960px)); */
+  /* font-size: calc( (100vw - 480px)/(1280 - 480) * (24 - 16) + 16px); */
+  /* font-size: calc(9px + (100vw - 320px) * (1px / 94px)); */
+  font-size: calc( (100vw - 480px) / (1280 - 480) * (11 - 9) + 9px);
+
+
+
+
+
+  font-family: 'Golos UI';
+}
+.menu-name {
+  display: block;
+  visibility: visible;
+  color:black;
+
+}
+.mobile-bottom-nav {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  will-change: transform;
+  transform: translateZ(0);
+  display: flex;
+  height: 50px;
+  box-shadow: 0 -2px 5px -2px #333;
+  background-color: #fff;
+}
+.mobile-bottom-nav__item {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.mobile-bottom-nav__item-content a {
+  font-family: 'Golos UI';
+}
+.mobile-bottom-nav__item--active {
+  color: red;
+}
+.mobile-bottom-nav__item-content {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+.menu {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  display: grid;
+  align-content: center;
+  width: 100%;
+  height: 3.5rem;
+  padding: 0 1rem;
+  /* border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem; */
+  background: #fff;
+  /* box-shadow: var(--shadow-medium); */
+}
+.menu-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.menu-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  outline: none;
+  color: var(--color-black);
+}
+.menu-icon {
+  font-size: 1.35rem;
+  line-height: 1;
+  color: inherit;
+}
+.feedback {
+ display: none;
+}
+.fdb {
+  display: none;
+}
+
+
+/* .line_help { 
+   margin-top: 16px;
+} */
+
+
+#footerm {
+  flex-direction: column;
+}
+.imgfl {
+    right: 3%;
+    position: absolute;
+    width: 6rem;
+    display: block;
+}
+#footer_left {
+  padding-left: 4.7%;
+}
+#footer_right {
+  padding:0.5rem 0 0 3.1%;
+}
+
+#footer_right a {
+  padding-top: 0.5rem;
+  display: block;
+}
+#footer_right ul{
+  padding-inline-start: 0.5rem;
+}
+#footerm li {
+  font-family: "Golos UI Bold";
+  line-height: calc( (100vw - 480px)/(1280 - 480) * (12 - 11) + 11px);
+  font-size: calc( (100vw - 480px)/(1280 - 480) * (10.5 - 11) + 11px);
+}
+.inn {
+  padding-top:18px;
+}
+
+.scroll-prom > .prom:nth-child(1) {
+  margin-left: 1.78%;
+}
+.scroll-prom > .prom:nth-last-child(1){
+  margin-right: 1.78%;
+
+}
+.prom-feed {
+  margin-left: 1.78%;
+}
+.help_txt_icon {
+  margin-right: 1.78%;
+
+}
+.block_help a {
+  text-wrap: wrap;
+ }
+ .help_txt_icon button:nth-of-type(1)
+ {
+  margin-left: 0%;
+ } 
+
+ .block_help {
+  display: none;
+}
+/* #star_OWLCAROUSEL_1 {
+  display: none;
+} */
+/* .promotions {
+  height: 0px;
+} */
+
+/* .mgrid-akc{
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 2.8%;
+}
+
+.mitem-akc {
+  height: 300px;
+  background-color: green;
+  max-width: 300px;
+} */
+
+}
+
+/* @media only screen and (max-width: 768px) {
+  .Navbar__Items,
+  .Navbar {
+    flex-direction: column;
+  }
+  .Navbar__Items {
+    display:none;
+  }
+  .Navbar__Items--right {
+    margin-left:0;
+  }
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+  .Navbar__Link-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+   } 
+} */
+@media screen and (max-width: 550px) and (min-width: 473px) {
+  .stories .scroll-stories .storie {
+    margin: 0 0em 0em 0em;}
+}
+@media screen and (max-width: 480px){
+  #footer_right {
+    padding:2.7rem 0 0 3.1%;
+  }
+}
+@media screen and (max-width: 930px){
+  .prom-feed .scroll-prom .prom .photo {
+    width: 300px;}
+}
+
+@media screen and (min-width: 360px) and (max-width: 420px) {
+  /* Ваши стили здесь */
+  /* .stories .scroll-stories {
+  justify-content: flex-start;
+  } */
+}
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  .scroll-prom::-webkit-scrollbar {
+    width: 0.1rem;
+  }
+}
