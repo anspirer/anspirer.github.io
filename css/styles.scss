@@ -295,7 +295,63 @@ body {
     width: 17.9px;
   }
 }
+.slide_show {
+  height: 450px;
+  overflow: hidden; /* Обрезаем изображение, если оно выходит за пределы контейнера */
+  display: flex; /* Используем flex-контейнер */
+  align-items: center; /* Центрируем по вертикали */
+  justify-content: center; /* Центрируем по горизонтали */
+  img {
+    width: 100%; /* Занимаем 100% ширины родительского контейнера */
+    height: 100%; /* Занимаем 100% высоты родительского контейнера */
+    object-fit: cover; /* Заполняем контейнер, сохраняя пропорции */
+  }
+}
+.post_slide {
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  img {
+    padding: 20px;
+  }
+}
+.pre_disc {
+  display: flex;
+  height: 60px;
+}
+.prom-block {
+  user-select: none;
+  cursor:grab;
+}
+.prom-block .scroll-prom {
+  height: 300px;
+  width: 100%;
+  overflow: scroll;
+  display: flex;
+  align-items: flex-end;
+  flex-wrap: nowrap;
+  scrollbar-color: transparent transparent;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.prom {
+  min-height: 300px;
+  min-width: 310px;
+  border: 1px $divider solid;
+  border-left: none;
+  img {
+      overflow: hidden;
+  }
+}
+.prom:nth-of-type(1) {
+  border-left: 1px $divider solid;
+}
 
+.scroll-prom::-webkit-scrollbar {
+  display: none;
+  width: 0; /* Для WebKit (Chrome, Safari, Яндекс.Браузер) */
+  background-color: transparent; /* Для WebKit (фон полосы прокрутки) */
+}
 nav {
   display: none;
 }
