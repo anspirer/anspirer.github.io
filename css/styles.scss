@@ -22,7 +22,7 @@ body {
 .main_area {
   position: relative;
   transition: top 0.3s ease;
-
+  top: 50px;
   .wrapper {
     display: grid;
     .child {

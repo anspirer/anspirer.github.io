@@ -66,6 +66,7 @@ window.addEventListener('load', function () {
     let currentScrollPos = window.pageYOffset;
     if(window.scrollY==0){
       document.querySelector('.m_logo').style.borderTopLeftRadius = '10px';
+      document.querySelector('.main_area').style.top = '50px';
       document.querySelector('.m_logo').style.borderBottomLeftRadius = '0px';
       document.querySelector('.btn_prfl').style.borderTopRightRadius = '10px';
       document.querySelector('.btn_prfl').style.borderBottomRightRadius = '0px';
@@ -83,6 +84,7 @@ window.addEventListener('load', function () {
         // Показываем PreHolder при прокрутке вверх
         document.querySelector('.PreHolder').style.top = '-48px'; // высота PreHolder
         document.querySelector('.new_nav').style.top = '0px';
+        document.querySelector('.main_area').style.top = '50px';
         document.querySelector('.m_logo').style.borderTopLeftRadius = '0px';
         document.querySelector('.m_logo').style.borderBottomLeftRadius = '10px';
         document.querySelector('.btn_prfl').style.borderTopRightRadius = '0px';
