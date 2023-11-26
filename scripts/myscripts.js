@@ -1,6 +1,4 @@
-
-window.addEventListener('load', function () {
-
+let prevScrollpos = window.pageYOffset;
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
@@ -44,7 +42,11 @@ window.onscroll = function () {
   prevScrollpos = currentScrollPos;
 };
 
-$(document).ready(function(){ 
+window.addEventListener('load', function () {
+
+
+
+
 	const slider = document.querySelector('.scroll-prom');
 	let isDown = false;
 	let startX;
@@ -97,7 +99,6 @@ $(document).ready(function(){
 	// updateText();
 	
 	// Add an event listener to update the text when the window is resized
-});
 
   //....
 });
