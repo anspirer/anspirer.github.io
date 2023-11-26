@@ -11,6 +11,7 @@ $path_s: "https://anspirer.github.io";
 //
 $path_as:"#{$path_s}/assets";
 
+
 body { 
   margin: 0 auto;
   width: 96.87%;
@@ -63,6 +64,7 @@ body {
   width: 96.87%;
 	height: 50px;
   display: flex;
+  justify-content: space-between;
 	align-items: center;
 	justify-items: center;
   overflow-wrap: break-word;
@@ -105,8 +107,11 @@ body {
     border: none;
     white-space: nowrap;
     text-wrap: nowrap;
-    font-family: "Golos UI-Medium", Helvetica;
+    font-family: "Golos UI Regular", Helvetica;
     font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
     color: $ligh_accent;
     background-image: url("#{$path_as}/back_tex.svg") ;
     background-repeat: repeat;
@@ -146,18 +151,17 @@ body {
 }
 .new_nav > button:not(.m_logo) {
   height: 60px;
-  font-family: "Golos UI-Medium", Helvetica;
+  font-family: "Golos UI Regular", Helvetica;
   background-image: url("#{$path_as}/back_tex.svg") ;
   background-repeat: repeat;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   letter-spacing: 0;
   word-wrap: break-word;
   word-break: unset;
   white-space:nowrap;
   overflow-wrap: unset;
-  align-items: stretch;
-  -webkit-align-items:stretch;
+
   -webkit-hyphens: unset;
   -moz-hyphens: unset;
   -ms-hyphens: unset;
@@ -167,7 +171,7 @@ body {
 .m_logo {
   display: flex;
   position: relative;
-  padding: 11px 20.5px 11px 20.5px;
+  padding: 19px 33px 16px;
   background-color: $main_color;
   border: 1px $divider solid;
   border-right: 0.5px;
@@ -175,6 +179,9 @@ body {
 }
 
 .btn_cat {
+  display: flex;
+  align-items: center;
+  -webkit-align-items:center;
   max-width: 160px;
   position: relative;
   padding: 17px 22px 17px 22px;
@@ -183,12 +190,13 @@ body {
   background-repeat: repeat;
   color: $main_color;
   img {
-    filter: invert(100%);
     margin-right: 11px;
   }
   border: 1px $divider solid;
 }
 .srch_sec  {
+  align-items: stretch;
+  -webkit-align-items:stretch;
   display: flex;
   justify-content: space-between;
   width: 1702px;
@@ -202,10 +210,12 @@ body {
     width: 97%;
   }
   img {
+    width: 20px;
     position:relative;
   }
 }
 .srch_sec input {
+  font-size: 16px;
   background-image: url("#{$path_as}/back_tex.svg") ;
   background-repeat: repeat;
   border: none;
@@ -217,58 +227,72 @@ body {
     color: $ligh_accent;
     font-family: "Golos UI-Regular", Helvetica;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 0;
-    line-height: 18px;
+    line-height: 16px;
     white-space: nowrap;
     text-transform: uppercase;
 }
 
 .btn_shp {
   display: flex;
-  width: 140px;
+  align-items: center;
+  -webkit-align-items:center;
+  width: 130px;
   text-wrap: nowrap;
   position: relative;
-  padding: 17px 22px 17px 22px;
+  padding: 17px 20px 17px 20px;
   background-color: #FFFFFF;
   color: $main_color;
   img {
-    filter: invert(100%);
-    padding-right: 15px;
+    padding-right: 10px;
   }
   border: 1px $divider solid;
   border-left: none;
 
 }
+
 .btn_fav {
   display: flex;
+  align-items: stretch;
+  -webkit-align-items:stretch;
   background-image: url("#{$path_as}/back_tex.svg") ;
   background-repeat: repeat;
   color: $main_color;
   border: 1px $divider solid;
   border-left: none;
-  padding:  20px 22px 20px 22px;
+  padding:  20px 20px 20px 20px;
+  img {
+    width: 16.3px;
+  }
 }
 
 .btn_cal {
   display: flex;
+  align-items: stretch;
+  -webkit-align-items:stretch;
   background-image: url("#{$path_as}/back_tex.svg") ;
   background-repeat: repeat;
   color: $main_color;
   border: 1px $divider solid;
   border-left: none;
-  padding:  19px 22px 19px 22px;
+  padding:  19px 20px 19px 20px;
+  img {
+    width: 16.3px;
+  }
 }
 .btn_prfl {
   display: flex;
+  align-items: stretch;
+  -webkit-align-items:stretch;
   background-color: transparent;
   color: $add_color;
   border: 1px $divider solid;
   border-left: none;
-  padding: 19px 22px 19px 22px;
+  padding: 19px 20px 19px 20px;
   border-top-right-radius: 10px;
   img {
-    filter: invert(100%);
+    width: 17.9px;
   }
 }
 
