@@ -3,6 +3,14 @@ $add_color:#F3E0CF;
 $divider: #CCCCCC;
 $ligh_accent: #92877C;
 
+//pathes
+//local
+// $path_s: "/Users/anspirer/ukl/anspirer.github.io";
+//github
+$path_s: "https://anspirer.github.io";
+//
+$path_as:"#{$path_s}/assets";
+
 body { 
   margin: 0 auto;
   width: 96.87%;
@@ -39,24 +47,8 @@ body {
     max-width:100%;/* Не трогать отвечает за автосмещение при сужении окна */
   }
 }
-@font-face {
-  font-family: 'Golos UI Regular';
-   src: url("golos-ui_regular.woff") format('woff');
-}
 
 
-
-//local
-// $path_s: "/Users/anspirer/ukl/anspirer.github.io";
-//github
-$path_s: "https://anspirer.github.io";
-
-
-$path_as:"#{$path_s}/assets";
-// @font-face {
-//   font-family: "Golos UI";
-//   src: url(golos-ui_regular.woff);
-// }
 @font-face {
   font-family: 'Golos UI Regular';
    src: url("#{$path_as}/fonts/golos-ui_regular.woff") format('woff');
@@ -66,13 +58,10 @@ $path_as:"#{$path_s}/assets";
    src: url("#{$path_as}/fonts/golos-ui_medium.woff") format('woff');
 }
 .PreHolder {
-
   position: fixed;
   top: 0;
   width: 96.87%;
 	height: 50px;
-	// display: grid;
-  // grid-template-columns: 140px 180px minmax(0px, 100%) 180px 210px 100px 80px 120px;
   display: flex;
 	align-items: center;
 	justify-items: center;
@@ -83,16 +72,12 @@ $path_as:"#{$path_s}/assets";
 	margin-right: auto;
 	z-index: 102;
   transition: top 0.3s ease;
-  .skipwr {
-    // width: 100px;
-  }
   .left_preh {
     height: 50px;
     display: flex;
     align-items: stretch;
     -webkit-align-items:stretch;
 
-    // padding-left: 100px;
     .GeoLoc, .PhonePre {
       align-items: center;
       -webkit-align-items:center;
@@ -113,25 +98,19 @@ $path_as:"#{$path_s}/assets";
   background-image: url("#{$path_as}/back_tex.svg") ;
   background-repeat: repeat;
   button {
-
     display: flex;
     align-items: stretch;
     padding: 10px 20px 10px 20px;
-
     -webkit-align-items:stretch;
     border: none;
     white-space: nowrap;
     text-wrap: nowrap;
-
     font-family: "Golos UI-Medium", Helvetica;
     font-size: 12px;
     color: $ligh_accent;
-    // background-color: #FFFFFF;
-  background-image: url("#{$path_as}/back_tex.svg") ;
-
+    background-image: url("#{$path_as}/back_tex.svg") ;
     background-repeat: repeat;
   }
-  // display: none;
 }
 @media screen and (max-width: 1920px) { 
   .PreHolder {
@@ -164,17 +143,11 @@ $path_as:"#{$path_s}/assets";
   overflow-wrap: break-word;
   word-wrap: break-word;
   transition: top 0.3s ease;
-
-  // display: none;
-
 }
 .new_nav > button:not(.m_logo) {
-  // color: $add_color;
-  // height: 18px;
   height: 60px;
   font-family: "Golos UI-Medium", Helvetica;
   background-image: url("#{$path_as}/back_tex.svg") ;
-
   background-repeat: repeat;
   font-weight: 500;
   font-size: 18px;
@@ -207,7 +180,6 @@ $path_as:"#{$path_s}/assets";
   padding: 17px 22px 17px 22px;
   text-wrap: nowrap;
   background-image: url("#{$path_as}/back_tex.svg") ;
-
   background-repeat: repeat;
   color: $main_color;
   img {
@@ -221,7 +193,6 @@ $path_as:"#{$path_s}/assets";
   justify-content: space-between;
   width: 1702px;
   background-image: url("#{$path_as}/back_tex.svg") ;
-  
   background-repeat: repeat;
   color: $main_color;
   border: 1px $divider solid;
@@ -241,7 +212,6 @@ $path_as:"#{$path_s}/assets";
 }
 .srch_sec input::placeholder {
     height: 69.55px;
-    // width: 1702px;
     position: relative;
     margin-left: 20px;
     color: $ligh_accent;
@@ -279,13 +249,7 @@ $path_as:"#{$path_s}/assets";
   border-left: none;
   padding:  20px 22px 20px 22px;
 }
-// @media screen and (max-width: 1440px) { 
-// .btn_fav {
 
-//   padding:  21px 22px 20px 22px;
-// }
-
-// }
 .btn_cal {
   display: flex;
   background-image: url("#{$path_as}/back_tex.svg") ;
@@ -311,10 +275,3 @@ $path_as:"#{$path_s}/assets";
 nav {
   display: none;
 }
-// .btn_shp {
-//   img {
-//     position: relative;
-//     top: 2px;
-//     margin-right: 15px;
-//   }
-// }

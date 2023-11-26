@@ -32,6 +32,8 @@ window.onscroll = function () {
     document.querySelector('.btn_prfl').style.borderBottomRightRadius = '0px';
     document.querySelector('.PreHolder').style.top = '0';
     document.querySelector('.new_nav').style.top = '50px';
+    document.querySelector('.main_area').style.top = '50px';
+
 
   } 
   // Проверяем, что прокрутка больше 20 пикселей и это не загрузка страницы
@@ -40,18 +42,17 @@ window.onscroll = function () {
       // Скрываем PreHolder при прокрутке вниз
       document.querySelector('.PreHolder').style.top = '0';
       if (isSafari){
-      document.querySelector('.PreHolder').style.top = '0px';
-
         document.querySelector('.new_nav').style.top = '50px';
-      
       }
       else {
       document.querySelector('.new_nav').style.top = '50px';
       }
+      
     } else {
       // Показываем PreHolder при прокрутке вверх
       document.querySelector('.PreHolder').style.top = '-48px'; // высота PreHolder
       document.querySelector('.new_nav').style.top = '0';
+      document.querySelector('.main_area').style.top = '11px';
       document.querySelector('.m_logo').style.borderTopLeftRadius = '0px';
       document.querySelector('.m_logo').style.borderBottomLeftRadius = '10px';
       document.querySelector('.btn_prfl').style.borderTopRightRadius = '0px';
