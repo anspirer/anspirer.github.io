@@ -1,28 +1,6 @@
-// $().fancybox({
-//   selector: '[data-fancybox="images"]',
-//   thumbs: {
-//       // Показывать превью
-//       autoStart: false,
-//   },
-//   keyboard: true,
-//   buttons: [
-//       // Показывать кнопку закрытия модалки
-//       "close"
-//   ],
-//   // Эффект анимации при перелючении
-//   transitionEffect: "zoom-in-out",
-//   // Зацикливать превью
-//   loop: true,
-// });
-// document.addEventListener("DOMContentLoaded", function () {
-let prevScrollpos = window.pageYOffset;
-var isSafari = window.safari !== undefined;
-// if (isSafari){
-//   document.querySelector('.btn_fav img').style.paddingTop = '3.6%';
-// } else {
-//   document.querySelector('.btn_fav').style.padding = '21px 22px 20px 22px';
 
-// }
+window.addEventListener('load', function () {
+
 
 window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
@@ -119,6 +97,7 @@ $(document).ready(function(){
 	// updateText();
 	
 	// Add an event listener to update the text when the window is resized
-	window.addEventListener("resize", updateText);
 });
 
+  //....
+});
