@@ -21,6 +21,8 @@ body {
 }
 .main_area {
   position: relative;
+  transition: top 0.3s ease;
+
   .wrapper {
     display: grid;
     .child {
@@ -171,8 +173,9 @@ body {
 .m_logo {
   display: flex;
   position: relative;
-  padding: 19px 33px 16px;
+  padding: 16px 33px 17px;
   background-color: $main_color;
+  background-image: none;
   border: 1px $divider solid;
   border-right: 0.5px;
   border-top-left-radius: 10px;
