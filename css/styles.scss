@@ -351,6 +351,12 @@ body {
   img {
       overflow: hidden;
   }
+  // button {
+  //   height: 100%;
+  //   width : 100%;
+  //   border:none;
+
+  // }
 }
 .prom:nth-of-type(1) {
   border-left: 1px $divider solid;
@@ -381,6 +387,10 @@ body {
     border-right: none;
     border-bottom: none;
   }
+  .box_md a:nth-child(2) {
+    border-bottom: none;
+
+  }
   .box_sm a:nth-child(1) {
     border: 1px $divider solid;
     border-right: none;
@@ -393,9 +403,20 @@ body {
   .box_sm a:nth-child(3) {
     border: 1px $divider solid;
     border-right: none;
+    border-top: none;
+
   }
   .box_sm a:nth-child(4) {
     border: 1px $divider solid;
+    border-top: none;
+
+  }
+  .blk_lwr a {
+    border-left: 1px $divider solid;
+    border-bottom: 1px $divider solid;
+    border-top: none;
+
+
   }
 }
 
@@ -424,8 +445,14 @@ body {
   background-color:cadetblue;
   display: grid;
   height: 16.2vw;
-
 }
+.blk_lwr {
+  background-color:cadetblue;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 16.2vw;
+}
+
 @media screen and (max-width: 915px) {
   .PreHolder, .new_nav {
     display: none;
@@ -464,7 +491,7 @@ body {
   .box_bg, .box_md, .box_sm{
     height: 96.43vw;
   }
-  .blk_med, .blk_sml {
+  .blk_med, .blk_sml, .blk_lwr {
     height: 48.2vw;
   }
 }
