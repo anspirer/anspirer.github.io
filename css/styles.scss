@@ -427,6 +427,9 @@ body {
 
 }
 @media screen and (max-width: 915px) {
+  .PreHolder, .new_nav {
+    display: none;
+  }
   .catalog_grid {
     grid-template-columns:none;
     .box_bg a {
