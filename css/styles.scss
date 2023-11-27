@@ -426,9 +426,9 @@ body {
   height: 16.2vw;
 
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 915px) {
   .catalog_grid {
-    grid-template-columns:unset;
+    grid-template-columns:none;
     .box_bg a {
       border-bottom: none;
     }
