@@ -363,30 +363,107 @@ body {
 }
 
 .catalog_grid {
+
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 33.33% 33.33% 33.33%;
+  
+
+  .box_bg a {
+    border: 1px $divider solid;
+    border-right: none;
+  }
+  .box_md a {
+    border: 1px $divider solid;
+    border-right: none;
+  }
+  .box_md a:nth-child(1) {
+    border: 1px $divider solid;
+    border-right: none;
+    border-bottom: none;
+  }
+  .box_sm a:nth-child(1) {
+    border: 1px $divider solid;
+    border-right: none;
+    border-bottom: none;
+  }
+  .box_sm a:nth-child(2) {
+    border: 1px $divider solid;
+    border-bottom: none;
+  }
+  .box_sm a:nth-child(3) {
+    border: 1px $divider solid;
+    border-right: none;
+  }
+  .box_sm a:nth-child(4) {
+    border: 1px $divider solid;
+  }
 }
 
  .box_bg, .box_md {
   display: grid;
-  height: 620px;
-  max-width: 620px;
+  height: 32.41vw;
+  width: 100%;
+  aspect-ratio: 1/1;
  }
+ .box_bg {
+  background-color: aquamarine;
+ }
+
  .blk_med {
   display: grid;
-  height: 310px;
-  max-width: 620px;
+  height: 16.2vw;
+  background-color:blueviolet;
+
 }
 .box_sm {
   grid-template-columns: 1fr 1fr;
   display: grid;
-  height: 620px;
-  max-width: 620px;
+  height: 32.43vw;
 }
 .blk_sml {
+  background-color:cadetblue;
   display: grid;
-  height: 310px;
-  max-width: 310px;
+  height: 16.2vw;
+
+}
+@media screen and (max-width: 768px) {
+  .catalog_grid {
+    grid-template-columns:unset;
+    .box_bg a {
+      border-bottom: none;
+    }
+    .box_md a {
+      border: 1px $divider solid;
+      border-bottom: none;
+
+    }
+    .box_md a:nth-child(1) {
+      border: 1px $divider solid;
+      border-bottom: none;
+    }
+    .box_sm a:nth-child(1) {
+      border: 1px $divider solid;
+      border-right: none;
+      border-bottom: none;
+    }
+    .box_sm a:nth-child(2) {
+      border: 1px $divider solid;
+      border-bottom: none;
+    }
+    .box_sm a:nth-child(3) {
+      border: 1px $divider solid;
+      border-right: none;
+    }
+    .box_sm a:nth-child(4) {
+      border: 1px $divider solid;
+    }
+  }
+  .box_bg, .box_md, .box_sm{
+    height: 96.43vw;
+  }
+  .blk_med, .blk_sml {
+    height: 48.2vw;
+  }
 }
 .box6 {
   display: grid;
