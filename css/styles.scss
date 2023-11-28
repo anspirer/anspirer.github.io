@@ -372,57 +372,53 @@ body {
 
   display: grid;
   grid-template-columns: 33.33% 33.33% 33.33%;
-  
 
   .box_bg a {
     border: 1px $divider solid;
     border-right: none;
   }
-  .box_md a {
-    border: 1px $divider solid;
-    border-right: none;
-  }
-  .box_md a:nth-child(1) {
-    border: 1px $divider solid;
-    border-right: none;
-    border-bottom: none;
-  }
-  .box_md a:nth-child(2) {
-    border-bottom: none;
 
+  .box_md {
+    .blk_med:nth-child(1) {
+      border: 1px $divider solid;
+      border-right: none;
+    }
+    .blk_med:nth-child(2) {
+      border-left: 1px #ccc solid;
+      border-bottom: 1px #ccc solid;
+    }
   }
-  .box_sm a:nth-child(1) {
-    border: 1px $divider solid;
-    border-right: none;
-    border-bottom: none;
-  }
-  .box_sm a:nth-child(2) {
-    border: 1px $divider solid;
-    border-bottom: none;
-  }
-  .box_sm a:nth-child(3) {
+  .box_sm {
+    .blk_sml:nth-child(1) {
+      border: 1px $divider solid;
+      border-right: none;
+    }
+    .blk_sml:nth-child(2) {
+      border: 1px $divider solid;
+    }
+    .blk_sml:nth-child(3) {
+      border: 1px $divider solid;
+      border-right: none;
+      border-top: none;
+    }
+  
+    .blk_sml:nth-child(4) {
+      border: 1px $divider solid;
+      border-top: none;
+      
+    }
+  } 
+ 
+  .blk_lwr .blk_sml {
     border: 1px $divider solid;
     border-right: none;
     border-top: none;
-
-  }
-  .box_sm a:nth-child(4) {
-    border: 1px $divider solid;
-    border-top: none;
-
-  }
-  .blk_lwr a {
-    border-left: 1px $divider solid;
-    border-bottom: 1px $divider solid;
-    border-top: none;
-
-
   }
 }
 
  .box_bg, .box_md {
   display: grid;
-  height: 32.41vw;
+  height: 32.4vw;
   width: 100%;
   aspect-ratio: 1/1;
  }
@@ -439,7 +435,7 @@ body {
 .box_sm {
   grid-template-columns: 1fr 1fr;
   display: grid;
-  height: 32.43vw;
+  height: 32.4vw;
 }
 .blk_sml {
   background-color:cadetblue;
@@ -462,15 +458,17 @@ body {
     .box_bg a {
       border-bottom: none;
     }
-    .box_md a {
-      border: 1px $divider solid;
-      border-bottom: none;
-
+    .box_md {
+      .blk_med:nth-child(1) {
+        border: 1px $divider solid;
+        border-bottom: none;
+      }
+      .blk_med:nth-child(2) {
+        border: 1px $divider solid;
+        border-bottom: none;
+      }
     }
-    .box_md a:nth-child(1) {
-      border: 1px $divider solid;
-      border-bottom: none;
-    }
+   
     .box_sm a:nth-child(1) {
       border: 1px $divider solid;
       border-right: none;
@@ -489,11 +487,12 @@ body {
     }
   }
   .box_bg, .box_md, .box_sm{
-    height: 96.43vw;
+    height: 96.4vw;
   }
   .blk_med, .blk_sml, .blk_lwr {
     height: 48.2vw;
   }
+
 }
 .box6 {
   display: grid;
